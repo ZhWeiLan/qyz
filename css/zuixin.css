@@ -1,0 +1,262 @@
+/*
+* @Author: 89333
+* @Date:   2018-08-27 19:11:33
+* @Last Modified by:   89333
+* @Last Modified time: 2018-09-06 18:45:34
+*/
+/* 公共样式：小小屏/col-xs-  <768px*/
+/* 顶部导航 */
+nav{
+	width: 100%;
+	height: 100px;
+}
+nav .con{
+	width: 100%;
+	height: 100%;
+	padding: 30px 15px 30px 15px;
+	background: #DF263F;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con .logo{
+	margin: 0 auto;
+	width: 84px;
+	height: 40px;
+}
+nav .list{
+	display: none;
+}
+nav .list ul{
+	display: none;
+}
+nav .con .icon{
+	width: 42px;
+	height: 36px;
+}
+
+/* 轮播图 */
+.banner{
+	width: 100%;
+	height: 420px;
+}
+.banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper{
+   	transition-timing-function: cubic-bezier(0.7, 0.1,0.1, 0.7);
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 导航栏 */
+.box1{
+	display: none;
+}
+.box1 .word{
+	display: none;
+}
+
+/* 详情 */
+main{
+	width: 100%;
+	margin: 20px 40px 0;
+}
+main .box2{
+/* 	height: 330px; */
+	background:#DF263F;
+	display: none;  
+}
+main .box2 h4{
+	position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+main .box2 h4 a{
+	padding: 0 15px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+main .box2 a{
+	padding: 10px 15px 10px 5px;
+    width: 100%;
+    display: block; 
+    color: #fff;  
+    margin-bottom: 10px;
+}
+main .box2 .pos:hover{
+	color: #333;
+}
+main .box2 a:hover{
+	text-decoration: none;
+}
+main .box2 ol{
+	margin-bottom: 10px;
+}
+main ul{
+	width: 100%;
+	border: 1px solid #666;
+	padding-top: 20px;
+}
+main ul li img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* 底部开始 */
+footer{
+	width: 100%;
+	height: 150px;
+	background: #262626;
+	padding-top: 10px;
+}
+footer p{
+	color: #666666;
+	font-size:12px;
+	line-height: 24px; 
+	text-align: center;
+	margin: 0;
+}
+footer p a{	
+	color:  #DF263F;
+}
+footer p a:hover{
+	color: #DF263F;
+	text-decoration: none;
+}
+footer .bottom{
+	width: 100%;
+	height: 56px;
+	background: #3F3F3F;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+footer .bottom span{
+	font-size: 12px;
+	line-height: 56px;
+}
+footer .bottom a{
+	color: #fff;
+	text-decoration: none;
+}
+footer .bottom a:hover{
+	color: #DF263F;
+}
+
+
+
+
+
+
+
+
+
+/* 平板：小屏幕 col-sm-  >768px */
+@media screen and (min-width: 768px){
+	nav .con{
+		padding: 0;
+	}
+	nav .con .logo{
+		width: 168px;
+		height: 80px;
+		margin: 10px auto;
+	}
+	nav .con .list{
+		width: 648px;
+		height: 100px;
+		float: left;
+		margin: 0;
+		background: #fff;
+		display: block;
+	}
+	nav .con .list ul{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		display: inline;
+	}
+	nav .con .list ul li{
+		width: 100px;
+		height: 100%;
+		padding: 20px 22px;
+		float: left;
+	}
+	nav .con .list ul li p {
+		font-size: 14px;
+		text-align: center;
+		line-height: 50px; 
+	}
+	nav .con .list ul li p a{
+		color:#666;
+		padding: 20px 0;
+	}
+	nav .con .list ul li:hover{
+		background: #EEEEEE;
+	}
+	nav .con .list ul li a:hover{
+		color: #DF263F;
+		text-decoration: none;
+	}
+	nav .con .icon{
+		display: none;
+	}
+	.box1{
+		width: 100%;
+		height: 40px;
+		background: #333333;
+		padding: 0 40px;
+		display: inline-block;
+	}
+	.box1 .word{
+		width: 100%;
+		height: 100%;
+		background:#DF263F;
+		padding-left: 10px;
+		display: inline-block;
+	}
+	.box1 .word p{
+		font-size: 12px;
+		color: #fff;
+		line-height: 40px;
+	}
+	.box1 .word p a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.box1 .word p a:hover{
+		color:#F5BDC5;
+	}
+	main .box2{
+		display: block;
+	}
+	footer{
+		height: 100px;
+	}
+	footer .bottom{
+		display: none;
+	}
+
+}
+
+/* 普通PC端：中等屏幕 col-md-    >992px */
+@media screen and (min-width: 992px){
+
+}
+
+
+/* 大屏幕pc端： 大屏幕 col-lg-   >1200px */
+@media screen and (min-width: 1200px){
+
+}
