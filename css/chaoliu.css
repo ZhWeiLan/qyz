@@ -2,7 +2,7 @@
 * @Author: 89333
 * @Date:   2018-08-27 10:35:55
 * @Last Modified by:   89333
-* @Last Modified time: 2018-09-06 18:29:19
+* @Last Modified time: 2018-09-16 11:59:18
 */
 /* 公共样式：小小屏/col-xs-  <768px*/
 /* 顶部导航 */
@@ -98,6 +98,9 @@ main .box2 a:hover{
 main .box2 ol{
 	margin-bottom: 10px;
 }
+main ul:nth-of-type(2){
+	display: none;
+}
 main ul li{
 	width: 100%;
 	border: 1px solid #E0DDE0;
@@ -163,11 +166,12 @@ main ul li .more:hover a{
 	border-left: 0;
 }
 .goods1 ul li:nth-child(1){
-	background: #DF263F;
+	/* background: #DF263F; */
 }
 .goods1 ul li p{
 	text-align: center;
 	line-height: 30px;
+	cursor: pointer;
 }
 .goods1 ul li p a{
 	color: #666666;
@@ -176,7 +180,7 @@ main ul li .more:hover a{
 .goods1 ul li:hover{
 	background: #EEEEEE;
 }
-.goods1 ul li:nth-child(1):hover{
+.goods1 ul li .choose1{
 	background: #DF263F;
 }
 /* 底部开始 */

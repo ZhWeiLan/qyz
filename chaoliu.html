@@ -5,6 +5,7 @@
 	<title>潮流客片</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script src="js/swiper-4.3.5.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/swiper-4.3.5.min.css">	
 	<link rel="stylesheet" href="css/meta.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -111,7 +112,7 @@
 				</li>
 			</ol>
 		</div>
-		<ul class="col-sm-9 col-sm-offset-0 ">
+		<ul class="col-sm-9 col-sm-offset-0 pic1">
 			<li class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
 				<h6>最爱游艇</h6>
 				<img src="img/6.jpg" alt="">
@@ -166,6 +167,8 @@
 					</p>
 				</div>
 			</li>
+		</ul>
+		<ul class="col-sm-9 col-sm-offset-0 pic2">
 			<li class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
 				<h6>兰蒂婚纱摄影</h6>
 				<img src="img/11.jpg" alt="">
@@ -226,16 +229,16 @@
 
 	<!-- 页码导航开始 -->
 	<div class="goods1">
-		<p>共 <span>15</span> 条记录 <span>2</span> 页</p>
+		<p>共 <span>12</span> 条记录 <span>2</span> 页</p>
 		<ul>
 			<li>
-				<p>1</p>
+				<p class="now1 choose1">1</p>
 			</li>
 			<li>
-				<p><a href="">2</a></p>
+				<p class="now2"><a href="javascript:;">2</a></p>
 			</li>
 			<li>
-				<p><a href="">&gt;&gt;</a></p>
+				<p><a href="javascript:;">&gt;&gt;</a></p>
 			</li>
 		</ul>
 	</div>
@@ -291,10 +294,42 @@
 	autoplay : {
 		delay:3000
 	},
-  })
+  })	
+
+
+    // let choosees = $(".goods1 ul li .now");
+    // let uls = $("main ul");
+    // console.log(choosees, uls);
+    // choosees.click(function () {
+    //     let j = choosees.index();
+    //     console.log(j);
+    //     uls.css("display", "none").eq(j).css("display", "block");
+    //     choosees.removeClass("choose1").eq(j).addClass("choose1");
+    // })
+    // choosees.triggerHandler("click");
+    
+
+
  </script>
 
-
+<script>
+	let now1=$(".goods1 ul li .now1");
+    let now2=$(".goods1 ul li .now2");
+    let pic1=$("main ul.pic1");
+    let pic2=$("main ul.pic2");
+    now1.click(function(){
+    	now1.addClass("choose1");
+    	now2.removeClass('choose1');
+    	pic1.css("display","block");
+    	pic2.css("display","none");
+    })
+    now2.click(function(){
+    	now2.addClass("choose1");
+    	now1.removeClass('choose1');
+    	pic2.css("display","block");
+    	pic1.css("display","none");
+    })
+</script>
 
 </body>
 </html>
